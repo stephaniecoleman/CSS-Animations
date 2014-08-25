@@ -1,0 +1,54 @@
+# SC intro - css hardware acceleration + why?
+# CC example - takes us through steps of putting it together
+# SC more information - browser compatibility
+# CC other examples from around the web
+# SC/CC the future
+
+1 How many of you guys have used heroku to deploy an app? Have you ever tried to boot it up and waited FOREVER for your page to load? That sucks! Well I'm not here to talk about servers, but I am here to talk about performance. One way performance can be measured in an app is by taking a look at its animations and transitions and see how smooth they are. So today, we're going to look at getting those smooth transitions using CSS animations.
+
+2 THE PROBLEM: In web apps, ANIMATIONS ARE RENDERED in the context of the BROWSER. The browser has a lot of work to do. Run the JavaScript, calculate CSS styles, layout the page, render graphics, update the page when you scroll, anticipate what part of the page is about to be visible, etc.
+
+3 So the browser is tasked with a lot of heavy lifting. If you are running animations using JQuery and Javascript, the BROWSER CAN GET OVERLOADED because those processes run on the browser's main thread. The result can be choppy, laggy, JERKY ANIMATIONS. It can especially be a problem in mobile web apps because CPUs are less powerful than a desktop's CPUs.
+
+4 THE SOLUTION: Let the GPU take on some of the burden. The GPU is the Graphical Processing Unit. It's a specialized chip that performs heavy calculations necessary for rendering video and graphics.
+
+5 Latest versions of the major browsers are capable of enabling what is called HARDWARE ACCELERATION. Hardware acceleration means that the browser offloads to the GPU the burden of the heavy duty calculations required for graphical rendering.
+
+6 GPU IS GOOD AT (FAST)
+  1) drawing an element to the screen
+  2) drawing the same element over and over again
+  3) drawing the same element in a different position, rotation, or scale
+  BAD AT (SLOW)
+  1) loading elements into its memory
+
+7 CSS Properties that are fast to animate (because GPU can assist with rendering) IMAGE!
+  1) CSS TRANSFORM (position, rotation, scale)
+  2) CSS OPACITY
+  3) CSS3 3D TRANSFORMS
+
+8 EXAMPLE : https://www.youtube.com/watch?v=-62uPWUxgcg#t=39
+
+9 Christina will now talk to us about how to create animations using one of these CSS techniques. The transform.
+
+--
+
+CHRISTINA
+
+--
+
+10 If you want to be sure that HARDWARE ACCELERATION kicks in, here's a little hack. Trigger hardware acceleration by throwing in a 3D transform declaration. Included vendor prefixes so it works with multiple browsers.
+
+CODE 
+    .cube {
+       -webkit-transform: translateZ(0);
+       -moz-transform: translateZ(0);
+       -ms-transform: translateZ(0);
+       -o-transform: translateZ(0);
+       transform: translateZ(0);
+       /* Other transform properties here */
+    }
+
+IMAGE
+    CSS3 3D TRANSFORMS CHART
+
+11 Only force hardware acceleration if you see a real performance problem. Using the GPU unnecessarily can cause significant performance issues because it increases memory use –– it will also affect the battery life on mobile devices.

@@ -2,20 +2,16 @@ require 'slide_hero'
 
 presentation 'Animations with CSS3' do
   
-  slide "Presentations made easy!" do
-    point "Make presentations at the speed of thought"
-    point "Make ideas pop", animation: "grow"
-    
-    list do
-      point "All kinds of awesome here"
-    end
+  slide "Animations with CSS3" do
+    point "Stephanie Coleman & Christina Cannito", animation: "grow"
   end
 
-  slide "Slide 2", transition: :slide do
-  	point "Here is one point"
+  slide "Performance Matters" do
+  	point "NOT COOL: choppy, laggy, jerky animations"
+    point "COOL: smooth, seamless animations"
   end
 
-  slide "Slide 3", transition: :fade do
+  slide "Slide 3" do
   	point "Here is one point"
   end
 
@@ -40,7 +36,7 @@ presentation 'Animations with CSS3' do
 	end
 
 	slide "" do #if you don't want a title, just put an empty string
-		point "Here is one point"
+		point "Here is one point BOLD<b>BOLD</b>"
 	end
 
 	slide "Slide 10" do

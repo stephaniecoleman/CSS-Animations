@@ -1,0 +1,46 @@
+KEYWORD: browser’s slower software rendering engine
+
+browsers have recently been using the GPU for rendering animations. 
+
+browsers are like video players.
+browsers paint the pixels on the screen.
+
+how do the pixels render?
+browsers connects with server. gets a bunch of bytes. then creates the document object model (DOM). looks at styles and matches styles to the DOM nodes. 
+
+BROWSER
+1 LAYOUT calculation of info required to display visible DOM nodes. this happens when you change the style. Happens when you fetch the layout values/scroll values. Also happens when you add or remove elements from the the DOM.
+  - you want to minimize layout. 
+
+- We perceive a transition or animation as smooth when the number of frames per second drawn to the screen is above 30 FPS (frame rate). If the frame rate (FPS) falls below that number, the animation might appear laggy or choppy. Sometimes, web applications don't hit this threshold number.
+
+- Browser has a lot of work to do, and sometimes it can't handle all that work.
+
+  Browser has a couple of threads 
+  
+    if you're scrolling and the compositor thread asks the main thread to update the bitmaps for newly visible parts and it doesn't respond quickly enough, it draws what it has and uses white elsewhere.
+
+- The Browser is responsible for rendering the animations, and sometimes it just doesn't have the horsepower. One tool that IS powerful enough to render those pixels at a fast enough rate is your computer's or phone's GPU.
+
+- GPU a chip found in most phones, tablets, and computers today. Very specialized chip. Sole purpose of the GPU is to take over from the CPU (central processing unit) the burden of heavy calculations related to rendering graphics
+
+- BITMAP is type of graphic which is a regular rectangular grid of pixels, where each pixel has a color value. Pixels in a grid. Basically this is the map of the image you will see
+
+GPU IS GOOD AT 1) drawing to the screen, 2) drawing the same bitmap over and over again 3) drawing the same bitmap in a different position, rotation, or scale. BAD AT loading bitmaps into their memory
+
+When you make changes to an element and the browser has to take care of rendering those changes, that means its doing the layout, then the painting, then sending the bitmaps to the GPU to then draw to the screen. Instead, let the GPU take over the stuff it's good at. this is called HARDWARE ACCELERATION
+
+It's particularly a problem on mobile devices because the CPUs (Central processing units) are less powerful than desktop CPUs. Rerendering takes longer.
+
+- CSS Properties that are fast to animate because GPU helps with the heavy lifting
+  1) CSS TRANSFORM (position, rotation, scale)
+  2) CSS OPACITY
+  3) CSS3 3D TRANSFORMS
+
+- Better than Javascript (imperative animations) bc JS runs on the browser's main thread, which is busy with a lot of other stuff. Writing in CSS (declarative animations) allows the browser to optimize the animation by offloading tasks to the GPU. 
+
+- CHECK FOR HARDWARE ACCELERATION about:flags in chrome. enable FPS counter. Chrome shows a FPS counter in the corner of the browser whenever the GPU is active. 
+
+- Transitions don't work below IE10. 
+
+- Force GPU Acceleration 
