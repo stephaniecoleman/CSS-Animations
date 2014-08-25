@@ -1,9 +1,11 @@
 require 'slide_hero'
 
 presentation 'Animations with CSS3' do
+  defaults headline_size: :small, transition: :fade
   
   slide "Animations with CSS3" do
-    point "Stephanie Coleman & Christina Cannito", animation: "grow"
+    point "Stephanie Coleman & Christina Cannito"
+    point "BK-001, yay.", animation: "grow"
   end
 
   slide "Performance Matters" do
