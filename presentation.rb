@@ -16,11 +16,11 @@ presentation 'Animations with CSS3' do
   slide "Animations are rendered by the browser" do
   	point "<h4>but the browser is working hard...</h4>"
     list do
-      point "Running JavaScript"
-      point "Calculating CSS styles"
-      point "Layout"
-      point "Painting elements"
-      point "etc, etc, etc!"
+      point "Running JavaScript", animation: "step"
+      point "Calculating CSS styles", animation: "step"
+      point "Layout", animation: "step"
+      point "Painting elements", animation: "step"
+      point "etc, etc, etc!", animation: "step"
     end
   end
 
@@ -36,9 +36,9 @@ presentation 'Animations with CSS3' do
 	
 	slide "GPU is good at..." do
 		list do
-      point "Drawing an element"
-      point "Re-drawing"
-      point "Changing position, rotation, or scale"
+      point "Drawing an element", animation: "step"
+      point "Re-drawing", animation: "step"
+      point "Changing position, rotation, or scale", animation: "step"
     end
 	end
 
@@ -51,7 +51,7 @@ presentation 'Animations with CSS3' do
 		image "cheap-operations.jpg"
 	end
 	
-	slide "Slide 8" do
+	slide "Fast animating CSS Properties in action." do
 		point "<iframe width='420' height='315' src='//www.youtube.com/embed/-62uPWUxgcg' frameborder='0' allowfullscreen></iframe>"
 	end
 
