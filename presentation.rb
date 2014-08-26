@@ -83,12 +83,13 @@ presentation 'Animations with CSS3' do
 	end
 
 	slide "Rotate" do
+		point ""
 		point "<div class='images-transitions'><img src='images/flower_rotate.png'></div>" 
-		point "45% angle"
+		point "45 degree angle"
 	end 
 
 	slide "Rotate with effect" do 
-		point "Scale on the x axis: <div class='movement'><img src='images/flower_rotate.png'></div>"
+		point "<div class='movement'><img src='images/flower_rotate.png'></div>"
 	end
 
 	slide "Scale" do 
