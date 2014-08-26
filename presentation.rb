@@ -108,4 +108,7 @@ presentation 'Animations with CSS3' do
 		point "<div class='two-d-combo'><img src='images/flower_rotate.png'></div>"
 	end 
 
+	slide "Grand Finale!" do
+	end
+
 end
