@@ -55,52 +55,56 @@ presentation 'Animations with CSS3' do
 		point "<iframe width='420' height='315' src='//www.youtube.com/embed/-62uPWUxgcg' frameborder='0' allowfullscreen></iframe>"
 	end
 
-	slide "Slide 9" do #Christina
+	slide "Transitions" do #Christina
 		point "Applying transitions to an element on hover."
 		point "<div class='square'></div>"
 		point "<div class='circle'></div>"
 	end
 
-	slide "Slide 10" do 
+	slide "Hover over" do 
 		point "Basic hover: <div class='square hover'></div>"
 	end 
 
-	slide "Slide 11" do 
+	slide "Hover with transition property" do 
 		point "Hover with trasition-property and transition-duration: <div class='square transition'></div>"
 	end 
 
-	slide "Slide 12" do 
+	slide "Transition with border radius" do 
 		point "Adding transition to the border radius: <div class='square border'></div>"
 	end 
 
-	slide "Slide 13" do 
+	slide "Transitions back to original state" do 
 		point "Setting the transition on the release of the rollover, brining the element back to its original state: <div class='square backwards'></div>"
 	end 
  
-	slide "Slide 14" do
-		point "2D Animations"
+	slide "2D Animations" do
 		point "Translate, rotate, skew, and scale"
-		point "Rotate: <div class='image-2d'><img src='images/flower_rotate.png'></div>"
+		point "Image in original state <div class='image-2d'><img src='images/flower_rotate.png'></div>"
 	end
 
-	slide "Slide 15" do 
-		point "Rotate with a value of two turns: <div class='images-transitions'><img src='images/flower_rotate.png'></div>"
-	end
+	slide "Rotate" do
+		point "<div class='images-transitions'><img src='images/flower_rotate.png'></div>" 
+		point "45% angle"
+	end 
 
-	slide "Slide 16" do 
+	slide "Rotate with effect" do 
 		point "Scale on the x axis: <div class='movement'><img src='images/flower_rotate.png'></div>"
+	end
+
+	slide "Scale" do 
+		point "Scale on the x axis: <div class='scale'><img src='images/flower_rotate.png'></div>"
 	end 
 
-	slide "Slide 17" do 
-		point "Skew:<div class='skew'><img src='images/flower_rotate.png'></div>"
+	slide "Skew" do 
+		point "<div class='skew'><img src='images/flower_rotate.png'></div>"
 	end 
 
-	slide "Slide 18" do 
-		point "Translate: <div class='two-d-transition'><img src='images/flower_rotate.png'></div>"
+	slide "Translate" do 
+		point "<div class='two-d-transition'><img src='images/flower_rotate.png'></div>"
 	end 
 
-	slide "Slide 19" do 
-		point "Combining scale and rotate: <div class='two-d-combo'><img src='images/flower_rotate.png'></div>"
+	slide "Combination of Scale and Rotate" do 
+		point "<div class='two-d-combo'><img src='images/flower_rotate.png'></div>"
 	end 
 
 end
