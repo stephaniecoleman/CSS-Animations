@@ -13,18 +13,14 @@ presentation 'Animations with CSS3' do
     point "COOL: smooth, seamless animations"
   end
 
-  slide "Test!" do
-  	point "test yoyoyo!"
-  end
-
   slide "Animations are rendered by the browser" do
   	point "<h4>but the browser is working hard...</h4>"
     list do
-      point "Running JavaScript"
-      point "Calculating CSS styles"
-      point "Layout"
-      point "Painting elements"
-      point "etc, etc, etc!"
+      point "Running JavaScript", animation: "step"
+      point "Calculating CSS styles", animation: "step"
+      point "Layout", animation: "step"
+      point "Painting elements", animation: "step"
+      point "etc, etc, etc!", animation: "step"
     end
   end
 
@@ -40,9 +36,9 @@ presentation 'Animations with CSS3' do
 	
 	slide "GPU is good at..." do
 		list do
-      point "Drawing an element"
-      point "Re-drawing"
-      point "Changing position, rotation, or scale"
+      point "Drawing an element", animation: "step"
+      point "Re-drawing", animation: "step"
+      point "Changing position, rotation, or scale", animation: "step"
     end
 	end
 

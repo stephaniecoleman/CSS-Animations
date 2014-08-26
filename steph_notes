@@ -1,0 +1,58 @@
+PERFORMANCE MATTERS
+
+When it comes to making great apps, PERFORMANCE is HUGE.
+
+ MEASURE performance by looking at animations and transitions.
+
+--
+ANIMATIONS ARE RENDERED BY THE BROWSER
+
+There's a problem. Animations RENDERED in the CONTEXT of the BROWSER. 
+
+Lots of RESPONSIBILITY. Many things happening in MAIN THREAD.
+
+LAYOUT = calculating POSITION and SIZE of DOM elements
+
+PAINTING = RENDERS actual PIXELS on the screen
+
+--
+OVERLOADING THE BROWSER
+
+JAVASCRIPT/JQUERY runs on the browser's main thread.
+
+MAIN THREAD is already so busy, if you use JS for animation, INCREASED CHANCE OF MISSING ANIMATION FRAMES.
+
+--
+GPU TO THE RESCUE
+
+SOLUTION = A helpful tool!
+
+takes care of HEAVY CALCULATIONS related to rendering graphics and video.
+
+--
+GPU IS GOOD AT...
+
+<list>
+
+--
+HARDWARE ACCELERATION
+
+So let's get the GPU doing what it's good at. 
+
+A process called HARDWARE ACCELERATION.
+
+Browser offloads heavy duty calculations to the GPU because it can work more EFFICIENTLY
+
+--
+CHEAP OPERATIONS
+
+Remember a couple slides ago we said GPU is good at drawing, redrawing, and transforming -- here are CSS Properties that utilize those types of processes.
+
+When you use these CSS properties, GPU can be called in to assist with rendering.
+
+If you want to MAKE SURE hardware acceleration kicks in, you can hack a little and include 3D transform declaration set to 0 in your stylesheet.
+
+--
+FAST ANIMATING CSS...
+
+See the difference in this video!
