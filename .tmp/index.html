@@ -19,7 +19,7 @@
   <body>
     <div class="reveal">
       <div class="slides">
-        <section data-transition="fade">
+        <section data-transition="slide">
   <h3>Animations with CSS3</h3>
   
     <p>Stephanie Coleman & Christina Cannito</p>
@@ -27,7 +27,7 @@
     <p class="fragment grow">BK-001, yay.</p>
   
 </section>
-<section data-transition="fade">
+<section data-transition="slide">
   <h3>Performance Matters</h3>
   
     <p>NOT COOL: choppy, laggy, jerky animations</p>
@@ -35,49 +35,85 @@
     <p>COOL: smooth, seamless animations</p>
   
 </section>
-<section data-transition="fade">
-  <h3>Slide 3</h3>
+<section data-transition="slide">
+  <h3>Animations are rendered by the browser</h3>
   
-    <p>Here is one point</p>
+    <p><h4>but the browser is working hard...</h4></p>
   
-</section>
-<section data-transition="fade">
-  <h3>Slide 4</h3>
+    <ul> 
   
-    <p>Here is one point</p>
+    <li>Running JavaScript</li>
   
-</section>
-<section data-transition="fade">
-  <h3>Slide 5</h3>
+    <li>Calculating CSS styles</li>
   
-    <p>Here is one point</p>
+    <li>Layout</li>
   
-</section>
-<section data-transition="fade">
-  <h3>Slide 6</h3>
+    <li>Painting elements</li>
   
-    <p>Here is one point</p>
+    <li>etc, etc, etc!</li>
+  
+</ul>
+
   
 </section>
-<section data-transition="fade">
-  <h3>Slide 7</h3>
+<section data-transition="slide">
+  <h3>Overloading the Browser</h3>
   
-    <p>Here is one point</p>
+    <img src="images/crappy_js.png" alt="">
+  
+    <p>BAD: JS animations run on browser's main thread</p>
   
 </section>
-<section data-transition="fade">
+<section data-transition="slide">
+  <h3>GPU to the Rescue</h3>
+  
+    <img src="images/gpu.png" alt="">
+  
+    <p>Graphical Processing Unit: specialized graphics rendering chip</p>
+  
+</section>
+<section data-transition="slide">
+  <h3>GPU is good at...</h3>
+  
+    <ul> 
+  
+    <li>Drawing an element</li>
+  
+    <li>Re-drawing</li>
+  
+    <li>Changing position, rotation, or scale</li>
+  
+</ul>
+
+  
+</section>
+<section data-transition="slide">
+  <h3>Hardware Acceleration</h3>
+  
+    <img src="images/turtles.gif" alt="">
+  
+    <p>Offload heavy lifting to the GPU</p>
+  
+</section>
+<section data-transition="slide">
+  <h3></h3>
+  
+    <img src="images/cheap-operations.jpg" alt="">
+  
+</section>
+<section data-transition="slide">
   <h3>Slide 8</h3>
   
-    <p>Here is one point</p>
+    <p><iframe width='420' height='315' src='//www.youtube.com/embed/-62uPWUxgcg' frameborder='0' allowfullscreen></iframe></p>
   
 </section>
-<section data-transition="fade">
+<section data-transition="slide">
   <h3></h3>
   
     <p>Here is one point BOLD<b>BOLD</b></p>
   
 </section>
-<section data-transition="fade">
+<section data-transition="slide">
   <h3>Slide 10</h3>
   
     <p>Here is one point</p>

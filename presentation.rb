@@ -1,7 +1,7 @@
 require 'slide_hero'
 
 presentation 'Animations with CSS3' do
-  defaults headline_size: :small, transition: :fade
+  defaults headline_size: :small, transition: :slide
   
   slide "Animations with CSS3" do
     point "Stephanie Coleman & Christina Cannito"
@@ -13,28 +13,46 @@ presentation 'Animations with CSS3' do
     point "COOL: smooth, seamless animations"
   end
 
-  slide "Slide 3" do
-  	point "Here is one point"
+  slide "Animations are rendered by the browser" do
+  	point "<h4>but the browser is working hard...</h4>"
+    list do
+      point "Running JavaScript"
+      point "Calculating CSS styles"
+      point "Layout"
+      point "Painting elements"
+      point "etc, etc, etc!"
+    end
   end
 
-  slide "Slide 4" do
-  	point "Here is one point"
+  slide "Overloading the Browser" do
+    image "crappy_js.png"
+    point "BAD: JS animations run on browser's main thread"
   end
-  
-  slide "Slide 5" do
-  	point "Here is one point"
+
+  slide "GPU to the Rescue" do
+    image "gpu.png"
+    point "Graphical Processing Unit: specialized graphics rendering chip"
   end
 	
-	slide "Slide 6" do
-		point "Here is one point"
+	slide "GPU is good at..." do
+		list do
+      point "Drawing an element"
+      point "Re-drawing"
+      point "Changing position, rotation, or scale"
+    end
 	end
+
+  slide "Hardware Acceleration" do
+    image "turtles.gif"
+    point "Offload heavy lifting to the GPU"
+  end
 	
-	slide "Slide 7" do
-		point "Here is one point"
+	slide "" do
+		image "cheap-operations.jpg"
 	end
 	
 	slide "Slide 8" do
-		point "Here is one point"
+		point "<iframe width='420' height='315' src='//www.youtube.com/embed/-62uPWUxgcg' frameborder='0' allowfullscreen></iframe>"
 	end
 
 	slide "" do #if you don't want a title, just put an empty string

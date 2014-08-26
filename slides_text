@@ -10,6 +10,10 @@
 
 3 So the browser is tasked with a lot of heavy lifting. If you are running animations using JQuery and Javascript, the BROWSER CAN GET OVERLOADED because those processes run on the browser's main thread. The result can be choppy, laggy, JERKY ANIMATIONS. It can especially be a problem in mobile web apps because CPUs are less powerful than a desktop's CPUs.
 
+The main thread can be busy for long periods of time running your JavaScript or painting a large element. While it’s busy, it’s not responsive to user input.
+
+The main pro of imperative animations happens to also be its main con: it’s running in JavaScript on the browser’s main thread. The main thread is already busy with other JavaScript, style calculations, layout and painting. Often there is thread contention. This substantially increases the chance of missing animation frames, which is the very last thing you want.
+
 4 THE SOLUTION: Let the GPU take on some of the burden. The GPU is the Graphical Processing Unit. It's a specialized chip that performs heavy calculations necessary for rendering video and graphics.
 
 5 Latest versions of the major browsers are capable of enabling what is called HARDWARE ACCELERATION. Hardware acceleration means that the browser offloads to the GPU the burden of the heavy duty calculations required for graphical rendering.
