@@ -37,12 +37,52 @@ presentation 'Animations with CSS3' do
 		point "Here is one point"
 	end
 
-	slide "" do #if you don't want a title, just put an empty string
-		point "Here is one point BOLD<b>BOLD</b>"
+	slide "Slide 9" do #Christina
+		point "Applying transitions to an element on hover."
+		point "<div class='square'></div>"
+		point "<div class='circle'></div>"
 	end
 
-	slide "Slide 10" do
-		point "Here is one point"
+	slide "Slide 10" do 
+		point "Basic hover: <div class='square hover'></div>"
+	end 
+
+	slide "Slide 11" do 
+		point "Hover with trasition-property and transition-duration: <div class='square transition'></div>"
+	end 
+
+	slide "Slide 12" do 
+		point "Adding transition to the border radius: <div class='square border'></div>"
+	end 
+
+	slide "Slide 13" do 
+		point "Setting the transition on the release of the rollover, brining the element back to its original state: <div class='square backwards'></div>"
+	end 
+ 
+	slide "Slide 14" do
+		point "2D Animations"
+		point "Translate, rotate, skew, and scale"
+		point "Rotate: <div class='image-2d'><img src='images/flower_rotate.png'></div>"
 	end
+
+	slide "Slide 15" do 
+		point "Rotate with a value of two turns: <div class='images-transitions'><img src='images/flower_rotate.png'></div>"
+	end
+
+	slide "Slide 16" do 
+		point "Scale on the x axis: <div class='movement'><img src='images/flower_rotate.png'></div>"
+	end 
+
+	slide "Slide 17" do 
+		point "Skew:<div class='skew'><img src='images/flower_rotate.png'></div>"
+	end 
+
+	slide "Slide 18" do 
+		point "Translate: <div class='two-d-transition'><img src='images/flower_rotate.png'></div>"
+	end 
+
+	slide "Slide 19" do 
+		point "Combining scale and rotate: <div class='two-d-combo'><img src='images/flower_rotate.png'></div>"
+	end 
 
 end

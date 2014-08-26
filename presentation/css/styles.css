@@ -1,0 +1,494 @@
+@import url(http://fonts.googleapis.com/css?family=Limelight);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab);
+@import url(http://fonts.googleapis.com/css?family=Limelight);
+@import url(http://fonts.googleapis.com/css?family=Special+Elite);
+
+html {
+	background-color: #e2c78e;
+}	
+
+h2 {
+	font-family: 'Limelight', cursive;
+	font-size: 3em;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+h3 {
+	font-family: 'Limelight', cursive;
+	font-size: 2em;
+}
+
+p {
+	font-family: 'Roboto Slab', serif;
+	font-size: 1.25em;
+	line-height: 1.35em;
+}
+
+.header {
+	margin-left: 2%; 
+	margin-top: 2%;
+	width: 200px;
+	height: 200px;
+	float: left;
+}
+
+.title {
+	margin-left: auto;
+	margin-right: auto; 
+	margin-bottom: 10%;
+	width: 400px;
+	height: 50px;
+	text-align: center;
+	/*background-color: blue;*/
+}
+
+.title img {
+	margin-left: -70%;
+}
+
+#navigation {
+	float: left;
+	color: #e2c78e;
+	width: 80%;
+	height: 200px;
+}
+
+#navigation a {
+	color: #e2c78e;
+	text-decoration: none;
+}
+
+#navigation ul {
+	padding-top: 5%;
+	padding-left: 15%;
+	width: 700px; 
+	height: 200px;
+}
+
+#navigation ul li {
+	display: inline;
+	background-color: #2F8B79;
+	padding: 20px;
+	border-radius: 10px;
+	font-family: 'Limelight', cursive;
+}
+
+#navigation ul li:hover {
+	background-color: #9B1E20;
+}
+
+#navigation .selected {
+	background-color: #9B1E20;
+}
+
+.container {
+	display: inline-block;
+}
+
+.content {
+	width: 60%;
+	padding-top: 10%;
+	padding-left: 2%;
+	padding-right: 2%;
+	/*text-align: center;*/
+	vertical-align: middle;
+	display: inline;
+	float: left;
+}
+
+.transition-content {
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.transition-content span {
+	font-size: 3em;
+	float: left;
+	line-height: .9em;
+}
+
+.content-2d {
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.content-2d span {
+	font-size: 3em;
+	float: left;
+	line-height: .9em;
+}
+
+.content-3d {
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.content-keyframes {
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.content-3d span {
+	font-size: 3em;
+	float: left;
+	line-height: .9em;
+}
+
+.content span {
+	font-size: 3em;
+	float: left;
+	line-height: 40px;
+}
+
+.left-flower {
+	float: right;
+	margin-top: 0;
+	margin-right: 2%;
+}
+
+.right-flower {
+	float: left;
+	margin-top: 0;
+	margin-left: 2%;
+}
+
+.resources {
+	margin-left: 10%;
+}
+
+.transitions-example {
+	margin-left: 40%;
+}
+
+.transitions-example p {
+	margin-left: -50%;
+	margin-right: 15%;
+}
+
+.square {
+	background-color: #9B1E20; 
+	width: 100px; 
+	height: 100px;
+	display: inline-block;
+	margin-right: 10%;
+}
+
+.circle {
+	background-color: #2F8B79;
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	display: inline-block;
+	/*float: right;*/
+}
+
+.square-transition {
+	margin-top: 150px;
+	margin-left: -5%;
+	width: 300px;
+	height: 300px;
+	/*border-radius: 15px;*/
+	background-color: #9B1E20;
+	transition-duration: 1s;
+	-webkit-duration: 1s;
+	-moz-duration: 1s;
+	-o-duration: 1s;
+	/* setting the duration to go back to the original state */
+}
+
+/* most common is the hover to make a change in state */
+.square-transition:hover {
+	background-color: #2F8B79;
+	border-radius: 50%;
+	transition-property: background, border-radius;
+	transition-duration: 1s; 
+	-webkit-duration: 1s;
+	-moz-duration: 1s;
+	-o-duration: 1s;
+}
+
+.tada {
+	margin-left: 8%;
+}
+
+.movement {
+	margin-left: -27%;
+}
+
+.wrap {
+	margin-left: -40%;
+	padding: 15px;
+	width: 850px;
+	height: 300px; 
+	box-shadow: 0 0 20px rgba(0,0,0,.5);
+}
+
+.wrap:hover .transit-box {
+	background-color: #2F8B79;
+	margin-left: 75%;
+}
+
+.transit-box {
+	width: 25%;
+	height: 200px;
+	border-radius: 8px;
+	background-color: #9B1E20; 
+	-webkit-transition-duration: 1s;
+	-moz-transition-duration: 1s;
+	-o-transition-duration: 1s;
+	transition-duration: 1s;
+	/*transition-timing-function: ease-in;*/
+	transition-timing-function: cubic-bezier(.5, -.5, .3, 1.3);
+	/*transition-delay: 2s; IF you wanted it to started 2 second after it hovers*/ 
+	/* you can combine all the transitions into one shorthand */
+	/* shorthand(order sensitive): transition: margin 1s cubic-bezier(.5, -.5, .3, 1.3) 0s, background .6s ease 1s; */
+} 
+/* example could write ease-out or ease */
+/* can also write out timing as a series of steps */
+/* look up bezier timing function */
+
+.z-wrapper {
+	position: relative;
+	margin: 0 auto;
+	padding-bottom: 5%;
+	width: 250px; 
+	height: 350px; 
+	cursor: pointer;
+}
+
+.z-wrapper div {
+	width: 100%;
+	height: 100%; 
+	border-radius: 10px; 
+	background-position: 50% 50%; 
+	background-size: 150px; 
+	background-repeat: no-repeat;
+	box-shadow: inset 0 0 45px rgba(255, 255, 255, .3), 0 12px 20px -10px rgba(0,0,0,.4);
+	text-align: center; 
+	text-shadow: 0 1px rgba(0,0,0,.3);
+	font: bold 3em sans-serif;
+	line-height: 350px; 
+	padding-bottom: 5%;
+}
+
+.z-wrapper {
+	transition: -webkit-transform 1s ease-in;
+	-webkit-transform-style: preserve-3d; /* this will get passed down to children */
+}
+
+.z-wrapper div {
+	position: absolute;
+	-webkit-backface-visibility: hidden;
+}
+/* hides the back of side a */
+
+.side-a {
+	z-index: 100;
+}
+
+.side-b {
+	-webkit-transform: rotateY(-180deg); 
+}
+/* this shows the back (the side b div) */
+
+.z-wrapper:hover {
+	-webkit-transform: rotateY(180deg);
+	/* -webkit-transform: scaleZ(2) translateZ(100px);*/
+	/* -webkit-transform: translateZ(200px); */ /* moves to the viewport, negative would move away from viewport, you can give it three values */
+	/* -webkit-transform: rotate3d(1, 0, 0, 65deg);*/ 
+}
+/* can take positive or negative values...can be x, y, z or change it to 3d */
+/* for the rotate3d it takes four values x, y, z then the degress */
+
+.three-d-setup {
+	margin-left: 40%;
+}
+
+.text-three {
+	margin-left: 10%;
+}
+
+.keyframe-set {
+	margin-left: 40%;
+}
+
+.code {
+	background-color: #C8DBD8;
+	width: 400px;
+	height: 200px;
+	margin-left: -300px;
+	border-radius: 20px;
+	display: inline-block;
+}
+
+.code p.inside-code {
+	opacity: 1.0;
+	color: black;
+	font-weight: bold;
+	padding-left: 53%;
+	padding-top: 3%;
+	font-family: 'Special Elite', cursive;
+}
+
+
+.long {
+	background-color: #C8DBD8;
+	width: 200px;
+	height: 500px;
+	margin-left: -300px;
+	border-radius: 20px;
+	display: inline-block;
+	opacity: 1.0;
+	color: black;
+	font-weight: bold;
+	padding-left: 20%;
+	padding-top: 3%;
+	font-family: 'Special Elite', cursive;
+}
+
+.images-transitions {
+	/*float: right;*/
+	display: inline;
+	margin-bottom: -100px;
+	padding-top: 30px;
+	width: 400px; 
+	height: 400px;
+}
+
+.hover {
+	margin-left: 10%;
+} 
+
+.hover:hover {
+	background-color: #2F8B79;
+}
+
+.transition {
+	margin-left: 10%
+}
+
+.transition:hover {
+	background-color: #2F8B79;
+	transition-property: background;
+	transition-duration: 1s;
+}
+
+.border {
+	margin-left: 10%;
+}
+
+.border:hover {
+	background-color: #2F8B79;
+	border-radius: 50%;
+	transition-property: background, border-radius;
+	transition-duration: 1s;
+}
+
+.backwards {
+	transition-duration: 1s;
+	margin-left: 10%;
+}
+
+.backwards:hover {
+	background-color: #2F8B79;
+	border-radius: 50%;
+	transition-property: background, border-radius;
+	transition-duration: 1s;
+}
+
+.bottom {
+	margin-left: -100px;
+}
+
+.image-2d {
+	margin-left: 45%;
+}
+
+.two-d {
+	margin-left: 20%; 
+	width: 350px;
+	height: 200px;
+}
+
+.two-d p {
+	padding-left: 10%;
+}
+
+.images-transitions img {
+	-webkit-transform: rotate(45deg);
+	padding-left: 5%;
+}
+
+.movement {
+	width: 100%;
+	margin-left: 5%;
+	display: inline;
+	transition: 1s ease-in-out;
+}
+
+.movement:hover {
+	-webkit-transform: rotate(2turn);
+	-webkit-transform-origin: 50% 50%;
+}
+
+.twos {
+	margin-left: 18%;
+	width: 200px;
+	height: 200px;
+}
+
+.twos p {
+	margin-left: -220px;
+	margin-top: -20px;
+}
+
+.scale {
+	width: 100%;
+	margin-left: 5%;
+	display: inline;
+	transition: 2s ease-in-out;
+}
+
+.scale:hover {
+	-webkit-transform: scaleX(1.5);
+	transition: 1s ease-in-out;
+}
+
+.two-d-para {
+	margin-left: 10%;
+	margin-right: 5%;
+}
+
+.skew {
+	width: 100%;
+	margin-left: 5%;
+	display: inline;
+	transition: 2s ease-in-out;
+}
+
+.skew:hover {
+	-webkit-transform: skewX(45deg);
+}
+
+.two-d-transition {
+	width: 100%;
+	margin-left: 5%;
+	display: inline;
+	transition: 2s ease-in-out;
+}
+
+.two-d-transition:hover {
+	-webkit-transform: translateX(200px);
+}
+
+.two-d-combo {
+	width: 100%;
+	margin-left: 5%;
+	display: inline;
+	transition: 2s ease-in-out;
+}
+
+.two-d-combo:hover {
+	-webkit-transform: scale(1.5) rotate(25deg);
+}
