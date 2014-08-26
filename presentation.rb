@@ -13,6 +13,10 @@ presentation 'Animations with CSS3' do
     point "COOL: smooth, seamless animations"
   end
 
+  slide "Test!" do
+  	point "test yoyoyo!"
+  end
+
   slide "Animations are rendered by the browser" do
   	point "<h4>but the browser is working hard...</h4>"
     list do
@@ -51,7 +55,7 @@ presentation 'Animations with CSS3' do
 		image "cheap-operations.jpg"
 	end
 	
-	slide "Slide 8" do
+	slide "Fast animating CSS Properties in action." do
 		point "<iframe width='420' height='315' src='//www.youtube.com/embed/-62uPWUxgcg' frameborder='0' allowfullscreen></iframe>"
 	end
 
