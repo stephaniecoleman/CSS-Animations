@@ -66,7 +66,7 @@ presentation 'Animations with CSS3' do
 	end 
 
 	slide "Hover with transition property" do 
-		point "Hover with trasition-property and transition-duration: <div class='square transition'></div>"
+		point "Hover with transition-property and transition-duration: <div class='square transition'></div>"
 	end 
 
 	slide "Transition with border radius" do 
@@ -74,7 +74,7 @@ presentation 'Animations with CSS3' do
 	end 
 
 	slide "Transitions back to original state" do 
-		point "Setting the transition on the release of the rollover, brining the element back to its original state: <div class='square backwards'></div>"
+		point "Setting the transition on the release of the rollover, bringing the element back to its original state: <div class='square backwards'></div>"
 	end 
  
 	slide "2D Animations" do
